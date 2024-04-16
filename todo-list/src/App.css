@@ -1,48 +1,95 @@
-body{
+body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   max-width: 850px;
   font-weight: bolder;
   margin: 0 auto;
 }
-.container{
+
+.container {
   display: flex;
   width: 100%;
-  justify-content:space-around;
+  justify-content: space-around;
 }
-.container-second{
+
+.container-second {
   display: flex;
   width: 90%;
   gap: 10px;
 }
 
-.card-line:first-child{
+.card-line:first-child {
   border-radius: 9px 9px 0 0;
 }
-.card-line:last-child{
+
+.card-line:last-child {
   border-radius: 0 0 9px 9px;
-} 
-.date-setting p{
+}
+
+.date-setting p {
   background-color: rgb(121, 154, 166);
   color: aliceblue;
   border-radius: 5px;
   padding-inline: 6px;
-  font-weight:500;
+  font-weight: 500;
 }
-.button-delete{
+
+.button-delete {
   align-self: center;
 }
-.button-delete>button{
+
+.button-delete>button {
   background-color: rgba(188, 117, 117, 0.774);
   border: 1px solid black;
   width: 50px;
   height: 80%;
 
 }
-.button-delete>button:hover{
+
+.button-delete>button:hover {
   background-color: rgba(120, 42, 42, 0.449);
 }
-.container-list{
+
+.container-list {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form label {
+  display: flex;
+  gap: 6px;
+}
+
+form label input {
+  flex-grow: 1;
+}
+
+form label input[type="checkbox"] {
+  flex-grow: 0;
+}
+
+form button {
+  width: 100%;
+}
+
+.kit-kat {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-container{
+  width: 320px;
+  align-self: center;
+}
+.form-container>label{
+  padding: 10px;
+}
+h2{
+  text-align: center;
 }

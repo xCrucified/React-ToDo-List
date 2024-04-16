@@ -16,7 +16,7 @@ export default function TaskLine({ task, onDelete }) {
     }
     function getColor() {
         if (task.priority >= 3) return "rgb(157, 194, 207)";
-        if (task.priority === 2) return "rgb(165, 204, 217)";
+        if (task.priority == 2) return "rgb(165, 204, 217)";
         if (task.priority <= 1) return "rgb(227, 227, 227)";
         else return "";
     };
