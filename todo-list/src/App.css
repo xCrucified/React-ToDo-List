@@ -11,6 +11,12 @@ body {
   justify-content: space-around;
 }
 
+.panel{
+  display: grid;
+  grid-template-columns: 100px 880px;
+  gap: 20%;
+}
+
 .container-second {
   display: flex;
   width: 90%;
@@ -90,6 +96,11 @@ form button {
 .form-container>label{
   padding: 10px;
 }
+h1{
+  text-align: center;
+  font-size: 40px;
+}
 h2{
   text-align: center;
+  font-size: 40px;
 }

@@ -18,11 +18,15 @@ export default function TaskList() {
 
     return (
         <>
-            <div>
-                {
-                    tasks.map(i => <TaskLine key={i.id} task={i} onDelete={handleDelete} />)
-                }
-                <CreateTask handleCreate={handleCreate} />
+            <div className="panel">
+                <div>
+                    <CreateTask handleCreate={handleCreate} />
+                </div>
+                <div className="main-container">
+                    {
+                        tasks.map(i => <TaskLine key={i.id} task={i} onDelete={handleDelete} />)
+                    }
+                </div>
             </div>
         </>
     );
